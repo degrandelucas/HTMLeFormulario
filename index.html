@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <script>
+        alert("Olá, isso é um código javaScript")
+    </script> -->
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="contatos.html">
+            <li>Contatos</li>
+          </a>
+          <a href="https://Google.com" target="_blank">
+            <li>Google</li>
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <li>Youtube</li>
+          </a>
+          <li>Home</li>
+        </ul>
+      </nav>
+    </header>
+
+    <form action="./index.html">
+      <label for="email">Email</label>
+      <input
+        style="display: block"
+        id="email"
+        type="email"
+        name="endereço_email"
+        placeholder="digite seu e-mail"
+      />
+
+      <label for="senha">Senha</label>
+      <input
+        style="display: block"
+        id="senha"
+        type="password"
+        name="password"
+      />
+
+      <label for="text">Texto</label>
+      <input style="display: block" id="text" type="text" name="text" />
+
+      <label for="CheckBox">CheckBox</label>
+      <input
+        style="display: block"
+        id="CheckBox"
+        type="checkbox"
+        name="CheckBox"
+      />
+
+      <label for="radio">Masculino</label>
+      <input
+        style="display: block"
+        id="radio"
+        type="radio"
+        name="sexo"
+        value="Masculino"
+      />
+
+      <label for="radio">Feminino</label>
+      <input
+        style="display: block"
+        id="radio"
+        type="radio"
+        name="sexo"
+        value="Feminino"
+      />
+
+      <label for="file">Arquivo</label>
+      <input style="display: block" id="file" type="file" name="file" />
+
+      <br />
+
+      <label for="Range">Classificação</label>
+      <input
+        style="display: block"
+        id="Range"
+        type="range"
+        name="Classificação"
+      />
+
+      <label for="data">Data</label>
+      <input style="display: block" id="data" type="date" name="date" />
+
+      <label for="numero">Numeral</label>
+      <input style="display: block" id="numero" type="number" name="numero" />
+
+      <p>
+        Dia da Semana
+        <select style="display: block" name="Dia da Semana" id="DiaSemana">
+          <option value="Domingo">Domingo</option>
+          <option value="Segunda">Segunda</option>
+          <option value="Terça">Terça</option>
+          <option value="Quarta">Quarta</option>
+          <option value="Quinta">Quinta</option>
+          <option value="Sexta">Sexta</option>
+          <option value="Sabado">Sabado</option>
+        </select>
+      </p>
+
+      <p>
+        Texto
+        <textarea
+          style="display: block"
+          id="mensagem"
+          name="mensagem"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </p>
+
+      <button>Enviar</button>
+    </form>
+    <p>
+      Estrutura inicial <br />
+      Finalizado
+    </p>
+
+    <img src="./BATMAN.jpg" style="width: 40%" />
+
+    <br />
+    <!-- Tag <br> para adicionar uma linha entre as tags, anterior e posterior ou podemos usar style="display: block;"-->
+
+    <video
+      controls
+      style="width: 50%; border-radius: 10px"
+      style="display: block"
+    >
+      <source
+        src="./VIVA_O_MOMENTO-A_VIDAS_SECRETA_DE_WALTER_MITTY.mp4"
+        type="video/mp4"
+      />
+      Seu navegador não possui suporte para vídeos.
+    </video>
+
+    <audio id="player" controls>
+      <source src="./Audio_Teste.ogg" type="audio/ogg" />
+      Seu navegador não possui suporte para audios.
+    </audio>
+
+    <button onclick="document.getElementById('player').play()">Tocar</button>
+    <button onclick="document.getElementById('player').pause()">Pausar</button>
+
+    <!-- Adicionar comentários = ctrl+k ctrl+c -->
+    <!-- Acessar a biblioteca de Atalhos Teclados = ctrl+k ctrl+s -->
+
+    <iframe src="./contatos.html"> </iframe>
+  </body>
+</html>
